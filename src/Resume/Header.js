@@ -8,9 +8,7 @@ const Header = ({ firstName, lastName, program, website }) => {
   return (
     <section style={style.main}>
       <h1 style={style.h1}>
-        <span style={style.span}>{firstName.toUpperCase()}</span>
-        <span style={style.span}>&nbsp;</span>
-        <span style={style.span}>{lastName.toUpperCase()}</span>
+        <span style={style.span}>{firstName.toUpperCase()} {lastName.toUpperCase()}</span>
       </h1>
       <span style={style.program}>
         {term} {nickname} | <Link to={website.link} style={{padding: 0}}>{website.name}</Link>
